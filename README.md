@@ -7,7 +7,7 @@ Build and Deploy Serverless Applications with IBM WebSphere Application Server 9
 
 # Image
 
-[![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg)](https://digitalocean.com)
+![Alt text](https://i.ibb.co/KrLy2rB/bcaf35d2c0e3120d53b97c98d195f4bf.png)
 
 ## Hi, I'm YousBot ! 👋
 Here you will find a treasure trove of fascinating and intriguing content covering a wide range of topics. From the latest trends in technology and science, to thought-provoking discussions on current events and personal development, there's something for everyone.
