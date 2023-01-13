@@ -5,7 +5,7 @@
 Build and Deploy Serverless Applications with IBM WebSphere Application Server 9
 ](https://community.ibm.com/community/user/wasdevops/blogs/youssef-sbai-idrissi1/2023/01/08/build-and-deploy-serverless-applications-with-ibm)
 
-![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+[![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg)](https://digitalocean.com)
 
 ## Hi, I'm YousBot ! 👋
 Here you will find a treasure trove of fascinating and intriguing content covering a wide range of topics. From the latest trends in technology and science, to thought-provoking discussions on current events and personal development, there's something for everyone.
