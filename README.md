@@ -2,7 +2,7 @@
 
 # Latest Articles
 [
-Build and Deploy Serverless Applications with IBM WebSphere Application Server 9
+* Build and Deploy Serverless Applications with IBM WebSphere Application Server 9
 ](https://community.ibm.com/community/user/wasdevops/blogs/youssef-sbai-idrissi1/2023/01/08/build-and-deploy-serverless-applications-with-ibm)
 
 
