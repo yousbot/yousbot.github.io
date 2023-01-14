@@ -5,6 +5,11 @@
 Build and Deploy Serverless Applications with IBM WebSphere Application Server 9
 ](https://community.ibm.com/community/user/wasdevops/blogs/youssef-sbai-idrissi1/2023/01/08/build-and-deploy-serverless-applications-with-ibm)
 
+
+[
+Migrating IBM WAS to Liberty on Docker: A Step-by-Step Guide
+](https://community.ibm.com/community/user/wasdevops/blogs/youssef-sbai-idrissi1/2023/01/14/migrating-ibm-was-to-liberty-on-docker-a-step-by-s)
+
 ## About
 Here you will find a treasure trove of fascinating and intriguing content covering a wide range of topics. From the latest trends in technology and science, to thought-provoking discussions on current events and personal development, there's something for everyone.
 
