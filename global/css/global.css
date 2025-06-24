@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'sf-pro-display-light';
+    src: url("../fonts/sf-pro-display-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'sf-pro-display-medium';
+    src: url("../fonts/sf-pro-display-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'sf-pro-display-bold';
+    src: url("../fonts/sf-pro-display-bold.ttf") format("truetype");
+}
+
+
+.font-sf-pro-display-bold {
+    font-family: 'sf-pro-display-bold', serif;
+}
+
+
+
+.font-sf-pro-display-light {
+    font-family: 'sf-pro-display-light', serif;
+}
+
+
+.font-sf-pro-display-medium {
+    font-family: 'sf-pro-display-medium', serif;
+}
+
+
+mark {
+    --mark-color: #fdff98;
+    --mark-skew: 0.4em;
+    --mark-height: 1.8em;
+    --mark-overlap: 0.3em;
+
+    margin-inline: calc(var(--mark-overlap) * -1);
+    padding-inline: var(--mark-overlap);
+
+    background-color: transparent;
+    background-image:
+        linear-gradient(to bottom right,
+            transparent 50%,
+            var(--mark-color) 50%),
+        linear-gradient(var(--mark-color),
+            var(--mark-color)),
+        linear-gradient(to top left,
+            transparent 50%,
+            var(--mark-color) 50%);
+    background-size:
+        var(--mark-skew) var(--mark-height),
+        calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
+        var(--mark-skew) var(--mark-height);
+    background-position:
+        left center,
+        center,
+        right center;
+    background-repeat: no-repeat;
+    color: inherit;
+}
+
+.underline-thick {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 0.2rem;
+
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 345ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes stack {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    }
+
+    ;
+
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+        transform: translate(var(--glitch-translate));
+    }
+
+    2% {
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+
+    4%,
+    100% {
+        text-shadow: none;
+        transform: none;
+    }
+}
