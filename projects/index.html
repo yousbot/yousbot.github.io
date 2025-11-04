@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blank Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../global/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="../global/css/global-2.css">
+</head>
+
+<body class="h-screen flex flex-col">
+    <header class="p-6">
+        <a href="https://yousbot.com" target="_blank" rel="noopener noreferrer"><img
+                src="../global/img/logo-yousbot-negative-white.png" alt="Yousbot Logo" width="120"></a>
+
+    </header>
+    <div class="flex flex-1 -mt-10">
+        <!-- <div
+            class="w-1/4 p-4 font-palanquan-darkregular text-3xl space-y-4 flex flex-col justify-center items-start -mt-20 ml-8">
+            <div class="cursor-pointer" onclick="showContent('vision')">Abstract</div>
+            <div class="cursor-pointer" onclick="showContent('products')">Products we built</div>
+
+        </div> -->
+        <div id="content" class="w-full px-4 mt-10 flex ">
+            <div id="vision" class="hidden w-full flex flex-col items-center">
+                <div class="flex flex-row gap-4 ml-2 mt-2 mb-4 ">
+                    <a href="https://linkedin.com/in/yousbot" target="_blank" rel="noopener noreferrer">
+                        <img src="../global/img/linkedin.png" class="w-8 h-8" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/blankresearch" target="_blank" rel="noopener noreferrer">
+                        <img src="../global/img/github.png" class="w-8 h-8" alt="GitHub" />
+                    </a>
+                    <div class="relative">
+                        <button onclick="copyEmail()" onmouseenter="hideTooltip()" class="focus:outline-none">
+                            <img src="../global/img/email.png" class="w-8 h-8" alt="Email" />
+                        </button>
+                        <div id="tooltip"
+                            class="absolute left-10 top-8 text-xs bg-black text-white px-2 py-1 rounded opacity-0 transition-opacity duration-200">
+                            Copied
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex items-center gap-2 mb-2 cursor-pointer"
+                    onclick="window.open('https://yousbot.com', '_blank')">
+                    <div class="text-xl font-9100">Youssef Sbai Idrissi</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 -mt-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                    </svg>
+                </div>
+
+
+                <div class="text-lg font-9103 tracking-wider text-gray-700 mb-14">youssef@blankresearch.com</div>
+
+                <div class="flex flex-col items-center gap-4 w-full max-w-5xl">
+                    <div class="font-9102 text-xl">
+                        <div class="flex flex-row gap-14 mt-4">
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-red-700 text-red-700 border bg-red-100 bg-opacity-30 text-xs ">Private
+                                    </span></div>
+
+                                <img src="../global/img/bookshelved-logo.png" alt="Bookshelved Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Bookshelved</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">A social media
+                                            startup
+                                            for book
+                                            readers.</span>
+                                    </div>
+                                    <a href="https://www.blankresearch.com/Bookshelved/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+
+                                <img src="../global/img/paperion-logo.png" alt="Paperion Logo" width="200"
+                                    class="rounded-2xl shadow-md">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Paperion</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">An academic
+                                            search
+                                            engine
+                                            to find
+                                            papers in seconds.</span>
+                                    </div>
+                                    <a href="https://github.com/blankresearch/Paperion" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                    <a href="https://www.blankresearch.com/Paperion/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+
+                                <img src="../global/img/bookologia-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Bookologia</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">A book search
+                                            engine
+                                            to find any
+                                            book in seconds.</span>
+                                    </div>
+                                    <a href="https://github.com/blankresearch/Bookologia" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                    <a href="https://www.blankresearch.com/Bookologia/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+                                <img src="../global/img/memory-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Memory</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm">A note taking app, without
+                                            distractions.</span>
+                                    </div>
+
+                                    <a href="https://github.com/blankresearch/Memory" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+                                <img src="../global/img/done-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Done</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm">A simple to do list, to get
+                                            things
+                                            done.</span>
+                                    </div>
+
+                                    <a href="https://github.com/blankresearch/Done" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Palanquin Dark-Regular';
+    src: url("../fonts/Palanquin\ Dark-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Soleil Light';
+    src: url("../fonts/SoleilLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Soleil Book';
+    src: url("../fonts/SoleilBook.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Bellefair Regular';
+    src: url("../fonts/Bellefair-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Albert Sans-Regular';
+    src: url("../fonts/Albert\ Sans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '0100';
+    src: url("../fonts/0100.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '0101';
+    src: url("../fonts/0101.otf") format("opentype");
+}
+
+@font-face {
+    font-family: '0200';
+    src: url("../fonts/0200.otf") format("opentype");
+}
+
+@font-face {
+    font-family: '0300';
+    src: url("../fonts/0300.ttf") format("trueEtype");
+}
+
+@font-face {
+    font-family: '0400';
+    src: url("../fonts/0400.otf") format("opentype");
+}
+
+
+
+@font-face {
+    font-family: '2001';
+    src: url("../fonts/2001.otf") format("opentype");
+}
+
+@font-face {
+    font-family: '2002';
+    src: url("../fonts/2002.otf") format("opentype");
+}
+
+@font-face {
+    font-family: '2003';
+    src: url("../fonts/2003.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '2004';
+    src: url("../fonts/2004.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '9100';
+    src: url("../fonts/9100.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '9101';
+    src: url("../fonts/9101.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '9102';
+    src: url("../fonts/9102.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '9103';
+    src: url("../fonts/9103.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'faucheur';
+    src: url("../fonts/faucheur.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'ibm';
+    src: url("../fonts/ibm.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '5002';
+    src: url("../fonts/5002.otf") format("truetype");
+}
+
+@font-face {
+    font-family: '5001';
+    src: url("../fonts/5001.otf") format("truetype");
+}
+
+.font-5001 {
+    font-family: '5001', sans-serif;
+}
+
+.font-5002 {
+    font-family: '5002', sans-serif;
+}
+
+.font-ibm {
+    font-family: 'ibm', sans-serif;
+}
+
+
+.font-faucheur {
+    font-family: 'faucheur', serif;
+}
+
+
+.font-9100 {
+    font-family: '9100', serif;
+}
+
+.font-9101 {
+    font-family: '9101', serif;
+}
+
+.font-9102 {
+    font-family: '9102', serif;
+}
+
+.font-9103 {
+    font-family: '9103', serif;
+}
+
+.font-0100 {
+    font-family: '0100', sans-serif;
+}
+
+.font-0101 {
+    font-family: '0101', sans-serif;
+}
+
+.font-0200 {
+    font-family: '0200', sans-serif;
+}
+
+.font-0300 {
+    font-family: '0300', sans-serif;
+}
+
+.font-0400 {
+    font-family: '0400', serif;
+}
+
+
+.font-2001 {
+    font-family: '2001', serif;
+}
+
+
+.font-2002 {
+    font-family: '2002', serif;
+}
+
+
+.font-2003 {
+    font-family: '2003', serif;
+}
+
+
+.font-2004 {
+    font-family: '2004', serif;
+}
+
+
+.font-palanquan-darkregular {
+    font-family: 'Palanquin Dark-Regular', sans-serif;
+}
+
+.font-soleillight {
+    font-family: 'Soleil Light', sans-serif;
+}
+
+.font-soleilbook {
+    font-family: 'Soleil Book', sans-serif;
+}
+
+.font-bellefair-regular {
+    font-family: 'Bellefair Regular', serif;
+}
+
+.font-albert-sans-regular {
+    font-family: 'Albert Sans-Regular', serif;
+}
+
+
+mark {
+    --mark-color: #fdff98;
+    --mark-skew: 0.4em;
+    --mark-height: 1.8em;
+    --mark-overlap: 0.3em;
+
+    margin-inline: calc(var(--mark-overlap) * -1);
+    padding-inline: var(--mark-overlap);
+
+    background-color: transparent;
+    background-image:
+        linear-gradient(to bottom right,
+            transparent 50%,
+            var(--mark-color) 50%),
+        linear-gradient(var(--mark-color),
+            var(--mark-color)),
+        linear-gradient(to top left,
+            transparent 50%,
+            var(--mark-color) 50%);
+    background-size:
+        var(--mark-skew) var(--mark-height),
+        calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
+        var(--mark-skew) var(--mark-height);
+    background-position:
+        left center,
+        center,
+        right center;
+    background-repeat: no-repeat;
+    color: inherit;
+}
+
+.underline-thick {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 0.2rem;
+
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 345ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes stack {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    }
+
+    ;
+
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+        transform: translate(var(--glitch-translate));
+    }
+
+    2% {
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+
+    4%,
+    100% {
+        text-shadow: none;
+        transform: none;
+    }
+}
