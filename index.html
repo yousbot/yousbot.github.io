@@ -65,23 +65,201 @@
                 </div>
 
 
-                <script>
-                    function copyEmail() {
-                        navigator.clipboard.writeText("youssef@blankresearch.com");
-                        const tooltip = document.getElementById("tooltip");
-                        tooltip.classList.add("opacity-100");
-                        setTimeout(() => tooltip.classList.remove("opacity-100"), 800);
-                    }
-
-                    function hideTooltip() {
-                        document.getElementById("tooltip").classList.remove("opacity-100");
-                    }
-                </script>
 
 
+                <div class="flex justify-center mt-10 gap-4">
+                    <button id="projectsBtn"
+                        class="text-gray-800 bg-gray-100 font-bold hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center">
 
-                <div class="mt-16 ml-10">
+                        Open Source
+                    </button>
+                    <button id="experienceBtn"
+                        class="text-gray-800 bg-gray-100 font-bold hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center">
+                        Experience
+                    </button>
+                </div>
 
+                <div id="projects-section" class="flex flex-col items-center mt-10 justify-center gap-4 w-full">
+                    <div class="font-9102 text-xl">
+                        <div class="flex flex-row gap-14 mt-4">
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-red-700 text-red-700 border bg-red-100 bg-opacity-30 text-xs ">Private
+                                    </span></div>
+
+                                <img src="./global/img/bookshelved-logo.png" alt="Bookshelved Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Bookshelved</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">A social media
+                                            startup
+                                            for book
+                                            readers.</span>
+                                    </div>
+                                    <a href="https://www.blankresearch.com/Bookshelved/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+
+                                <img src="./global/img/paperion-logo.png" alt="Paperion Logo" width="200"
+                                    class="rounded-2xl shadow-md">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Paperion</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">An academic
+                                            search
+                                            engine
+                                            to find
+                                            papers in seconds.</span>
+                                    </div>
+                                    <a href="https://github.com/blankresearch/Paperion" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                    <a href="https://www.blankresearch.com/Paperion/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+
+                                <img src="./global/img/bookologia-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Bookologia</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm break-words">A book search
+                                            engine
+                                            to find any
+                                            book in seconds.</span>
+                                    </div>
+                                    <a href="https://github.com/blankresearch/Bookologia" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                    <a href="https://www.blankresearch.com/Bookologia/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -mt-2 mr-2" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+                                <img src="./global/img/memory-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Memory</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm">A note taking app, without
+                                            distractions.</span>
+                                    </div>
+
+                                    <a href="https://github.com/blankresearch/Memory" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="mb-4"> <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">Open
+                                        source</span></div>
+                                <img src="./global/img/done-logo.png" alt="Blank Research Logo" width="200"
+                                    class="rounded-2xl">
+                                <div class="flex flex-col gap-1 mt-3">
+                                    <div class="px-2 flex flex-col gap-1 mb-2 w-52">
+                                        <span class="font-bellefair-regular text-xl">Done</span>
+                                        <span class="text-gray-700 text-opacity-80 text-sm">A simple to do list, to get
+                                            things
+                                            done.</span>
+                                    </div>
+
+                                    <a href="https://github.com/blankresearch/Done" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                                        <svg class="w-4 h-4 me-2 mb-1" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        Read code
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div id="experience-section" class="mt-16 ml-10">
+
+                    <!-- Open Source Projects -->
+
+
+                    <!-- Previous Experience -->
                     <div class="flex flex-col gap-8 mt-4">
                         <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
                             <!-- Left side -->
@@ -106,8 +284,8 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">Hong Kong based
-                                        auction house aims to build a platform for their international customers. <br
-                                            \><br \>
+                                        auction house needed to build a platform for their international customers. My
+                                        mission as a founding engineer was as follow:<br \><br \>
 
                                         ● &nbsp;&nbsp;&nbsp;Define product's features. <br \>
                                         ● &nbsp;&nbsp;&nbsp;Design the software architecture to be implemented. <br \>
@@ -188,8 +366,9 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
-                                        A California (US) based startup aims to build a social media for book lovers
-                                        worldwide, and needs to build the platform for hundreds of thousands of users.
+                                        A California (US) based startup was building a social media for book lovers
+                                        worldwide, hosting hundreds of thousands of users.
+                                        My mission as a first hire founding engineer was as follow:
                                         <br \><br \>
 
                                         ● &nbsp;&nbsp;&nbsp;Implement UI designs (react, nextJS, tailwind) <br \>
@@ -281,7 +460,8 @@
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
                                         A California (US) based startup aims to build a social media for book lovers
-                                        worldwide, and needs a lot of books data.
+                                        worldwide, and needs a lot of books data. My mission as a data engineer was as
+                                        follow:
                                         <br \><br \>
 
                                         ● &nbsp;&nbsp;&nbsp;Installed & maintained a distributed database infrastructure
@@ -369,19 +549,34 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
-                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 needs to migrate its
-                                        platform to a new
-                                        environment.<br \>
-                                        ( reach ~ 20 million users )
+                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 needed to migrate its
+                                        website and database to a new environment. ( reach ~ 40 million users )
+                                        <br />My mission as a Data &
+                                        Middleware
+                                        engineer was as follow:<br \>
                                         <br \><br \>
 
-                                        ● &nbsp;&nbsp;&nbsp;KVM/Qemu on Redhat Entreprise Server, over LinuxONE
-                                        Mainframe <br \>
-                                        ● &nbsp;&nbsp;&nbsp;IBM DB2 Purescale 11.5 <br \>
-                                        ● &nbsp;&nbsp;&nbsp;Oracle RAC 19c <br \>
-                                        ● &nbsp;&nbsp;&nbsp;Oracle GoldenGate <br \>
-                                        ● &nbsp;&nbsp;&nbsp;IBM Security Directory Suite <br \>
-                                        ● &nbsp;&nbsp;&nbsp;IBM Websphere Application Server <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Architecturing and Installing over 50 linux servers <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(
+                                        based
+                                        on KVM/Qemu on Linux Redhat Entreprise Server, with IBM LinuxONE
+                                        Mainframe ) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Migrating ~ 300Gb of relatinoal data to IBM DB2 Purescale
+                                        11.5 <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Setting up a high availability cluster for the Oracle
+                                        databases <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using Oracle RAC 19c ) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Setting up a zero-downtime replication infrustructure for
+                                        Oracle databases. <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using Oracle GoldenGate ) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Setting up a trusted identity data infrastructure for
+                                        authentication <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using IBM Security Directory Suite ) <br
+                                            \>
+                                        ● &nbsp;&nbsp;&nbsp;Setting up a high availability application server clusters,
+                                        of over 40 servers. <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using IBM Websphere Application Server )
+                                        <br \>
                                         ● &nbsp;&nbsp;&nbsp;IBM Websphere Portal ( Digital experience )
                                     </span>
                                 </div>
@@ -438,21 +633,26 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
-                                        𝑪𝒓𝒆𝒅𝒊𝒕 𝒅𝒖 𝑴𝒂𝒓𝒐𝒄 bank aims to implement and migrate a secure
+                                        𝑪𝒓𝒆𝒅𝒊𝒕 𝒅𝒖 𝑴𝒂𝒓𝒐𝒄 bank wanted to implement and migrate a secure
                                         middleware
                                         platform <br \>
                                         ( reach ~ 40 million users )
                                         <br \><br \>
 
-                                        ● &nbsp;&nbsp;&nbsp;IBM MQ implementation and configuration <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Architecturing and setting up their queuing platform.
+                                        ( using IBM MQ )<br \>
                                         ● &nbsp;&nbsp;&nbsp;SSL Implementation of secure channels with remote
-                                        clients.<br \>
+                                        clients internatinoally. <br \>
                                     </span>
                                 </div>
                                 <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
                                     <span
                                         class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
                                         IBM MQ
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Linux
                                     </span>
                                 </div>
                             </div>
@@ -482,17 +682,28 @@
                                 </div>
                                 <div class="mt-2">
                                     <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
-                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 aims to design, implement,
+                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 aimed to design, implement,
                                         and
                                         migrate a High Availablity architecture for an analytics and business
                                         intelligence platform. <br \>
                                         ( reach ~ 20 million users )
                                         <br \><br \>
 
-                                        ● &nbsp;&nbsp;&nbsp;IBM Cognos Analytics 11 ( High Availability configuration )
+                                        ● &nbsp;&nbsp;&nbsp;Architecturing and setting up a high available configuration
+                                        of over 10 servers and 50 clients, with mission critical reports and batches.
+                                        <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using Cognos Analytics 11 -- with its High
+                                        Availability configuration )
                                         <br \>
-                                        ● &nbsp;&nbsp;&nbsp;IBM DB2 11.5 ( HADR configuration )<br \>
-                                        ● &nbsp;&nbsp;&nbsp;IBM Infosphere Datastage 11.7<br \>
+                                        ● &nbsp;&nbsp;&nbsp;Architecturing, installing and migrating the existing
+                                        relational databases and their data (of Terabytes). <br \>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using IBM DB2 11.5 -- High Availablity and
+                                        Disaster Recovery configuration
+                                        )<br \>
+                                        ● &nbsp;&nbsp;&nbsp;Architecturing and migrating the existing ETL
+                                        infrustructure. <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( using IBM Infosphere Datastage 11.7 )<br
+                                            \>
                                     </span>
                                 </div>
                                 <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
@@ -700,7 +911,7 @@
                                         Apache),
                                         using the following stack:
                                         <br \><br \>
-                                        ● &nbsp;&nbsp;&nbsp;Elastic Search Database
+                                        ● &nbsp;&nbsp;&nbsp;Elastic Search Database <br \>
                                         ● &nbsp;&nbsp;&nbsp;IBM Application Performance Management 8.1.4 + IBM Tivoli
                                         Monitoring 6.3
                                         <br \>
@@ -726,6 +937,56 @@
 
         </div>
     </div>
+
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText("youssef@blankresearch.com");
+            const tooltip = document.getElementById("tooltip");
+            tooltip.classList.add("opacity-100");
+            setTimeout(() => tooltip.classList.remove("opacity-100"), 800);
+        }
+
+        function hideTooltip() {
+            document.getElementById("tooltip").classList.remove("opacity-100");
+        }
+    </script>
+
+    <script>
+        const projectsSection = document.querySelector('#projects-section');
+        const experienceSection = document.querySelector('#experience-section');
+
+        document.querySelector('#projectsBtn').addEventListener('click', () => {
+            projectsSection.classList.remove('hidden');
+            experienceSection.classList.add('hidden');
+        });
+
+        document.querySelector('#experienceBtn').addEventListener('click', () => {
+            experienceSection.classList.remove('hidden');
+            projectsSection.classList.add('hidden');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const projectsBtn = document.getElementById("projectsBtn");
+            const experienceBtn = document.getElementById("experienceBtn");
+            const projectsSection = document.getElementById("projects-section");
+            const experienceSection = document.getElementById("experience-section");
+
+            projectsBtn.addEventListener("click", () => {
+                projectsSection.classList.remove("hidden");
+                experienceSection.classList.add("hidden");
+            });
+
+            experienceBtn.addEventListener("click", () => {
+                experienceSection.classList.remove("hidden");
+                projectsSection.classList.add("hidden");
+            });
+
+            projectsBtn.click();
+        });
+    </script>
+
 </body>
 
 </html>
