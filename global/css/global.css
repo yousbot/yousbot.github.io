@@ -19,6 +19,104 @@
 }
 
 
+@font-face {
+    font-family: '401';
+    src: url("../fonts/401.ttf") format("truetype");
+}
+
+
+.font-401 {
+    font-family: '401', serif;
+}
+
+
+@font-face {
+    font-family: '402';
+    src: url("../fonts/402.ttf") format("truetype");
+}
+
+
+.font-402 {
+    font-family: '402', serif;
+}
+
+@font-face {
+    font-family: '403';
+    src: url("../fonts/403.ttf") format("truetype");
+}
+
+
+.font-403 {
+    font-family: '403', serif;
+}
+
+@font-face {
+    font-family: '404';
+    src: url("../fonts/404.ttf") format("truetype");
+}
+
+
+.font-404 {
+    font-family: '404', serif;
+}
+
+@font-face {
+    font-family: '405';
+    src: url("../fonts/405.ttf") format("truetype");
+}
+
+
+.font-405 {
+    font-family: '405', serif;
+}
+
+
+
+@font-face {
+    font-family: '406';
+    src: url("../fonts/406.ttf") format("truetype");
+}
+
+
+.font-406 {
+    font-family: '406 ', serif;
+}
+
+
+
+@font-face {
+    font-family: '0100';
+    src: url("../fonts/0100.ttf") format("truetype");
+}
+
+
+.font-0100 {
+    font-family: '0100', serif;
+}
+
+
+@font-face {
+    font-family: '0400';
+    src: url("../fonts/0400.otf") format("opentype");
+}
+
+
+
+.font-0200 {
+    font-family: '0200', serif;
+}
+
+
+@font-face {
+    font-family: '0200';
+    src: url("../fonts/0200.otf") format("opentype");
+}
+
+
+.font-0400 {
+    font-family: '0400', serif;
+}
+
 
 .font-sf-pro-display-light {
     font-family: 'sf-pro-display-light', serif;

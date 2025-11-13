@@ -10,277 +10,77 @@
 </head>
 
 <body class="h-screen flex flex-col">
-    <div class="flex mt-16 flex-row items-center justify-center">
+    <div class="flex mt-20 flex-row items-center justify-center">
         <div id="content" class="w-full px-6 flex max-w-7xl">
-
             <div id="vision" class="hidden w-full flex flex-col px-auto">
-                <div class="flex flex-col gap-2 items-center justify-center ">
+
+                <div class="flex flex-row justify-between gap-20">
+                    <div class="flex gap-10 items-start justify-start ml-10">
+                        <img src="global/img/profile.png" alt="Profile" class="w-36 h-36 rounded-full" />
+                        <div class="flex flex-col items-start mt-3 justify-center tracking-wider gap-1 w-full">
+                            <div class=" font-sf-pro-display-bold text-2xl">
+                                Youssef
+                                <span class="font-sf-pro-display-light text-2xl text-gray-600">, Software
+                                    Engineer</span>
+                            </div>
+                            <div class="font-sf-pro-display-light text-md text-gray-600 mb-3 flex items-center gap-3">
+                                📍 Remote, Worldwide
+                            </div>
+                            <div class="flex flex-row gap-4 ml-2 mt-2">
+                                <a href="https://linkedin.com/in/yousbot" target="_blank" rel="noopener noreferrer">
+                                    <img src="global/img/linkedin.png" class="w-8 h-8" alt="LinkedIn" />
+                                </a>
+                                <a href="https://github.com/blankresearch" target="_blank" rel="noopener noreferrer">
+                                    <img src="global/img/github.png" class="w-8 h-8" alt="GitHub" />
+                                </a>
+                                <div class="relative">
+                                    <button onclick="copyEmail()" onmouseenter="hideTooltip()"
+                                        class="focus:outline-none">
+                                        <img src="global/img/email.png" class="w-8 h-8" alt="Email" />
+                                    </button>
+                                    <div id="tooltip"
+                                        class="absolute left-10 top-8 text-xs bg-black text-white px-2 py-1 rounded opacity-0 transition-opacity duration-200">
+                                        Copied
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
 
-                    <!-- links -->
-                    <div class="flex flex-row gap-4 ml-2 mb-2">
-                        <a href="https://linkedin.com/in/yousbot" target="_blank" rel="noopener noreferrer">
-                            <img src="global/img/linkedin.png" class="w-8 h-8" alt="LinkedIn" />
+                    <div class="flex flex-col items-center justify-center gap-4">
+                        <a href="global/img/resume.pdf" target="_blank" rel="noopener noreferrer"
+                            class="w-64 text-green-800 bg-green-200 bg-opacity-50 hover:bg-opacity-70 focus:ring-4 focus:outline-none focus:ring-gray-700 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                            <img src="global/img/download.svg" alt="letter" width="30" class="mr-3">
+                            <span class="text-left leading-tight text-md">Updated Resume</span>
                         </a>
-                        <a href="https://github.com/blankresearch" target="_blank" rel="noopener noreferrer">
-                            <img src="global/img/github.png" class="w-8 h-8" alt="GitHub" />
+                        <a href="global/img/bookshelved-Recommendation.pdf" target="_blank" rel="noopener noreferrer"
+                            class="w-64 text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                            <img src="global/img/download.svg" alt="letter" width="30" class="mr-3">
+                            <span class="text-left leading-tight text-md">Recommendation Letter</span>
                         </a>
-
-                    </div>
-                    <!-- name -->
-                    <div class="flex items-center gap-2 cursor-pointer "
-                        onclick="window.open('https://yousbot.com', '_blank')">
-                        <div class="text-xl tracking-wide font-sf-pro-display-medium">Youssef, <span
-                                class="font-sf-pro-display-light  text-gray-500">&nbsp;Software
-                                Engineer</span></div>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 -mt-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13.828 10.172a4 4 0 015.656 5.656l-4.243 4.243a4 4 0 01-5.656-5.656m6.364-6.364l-2.828 2.828" />
-                        </svg> -->
-                    </div>
-
-                    <!-- email -->
-                    <div class="text-md font-9103 tracking-wider text-gray-700 mb-8">youssef@blankresearch.com</div>
-
-
-                </div>
-
-
-                <div class="flex justify-center gap-4 mb-10">
-
-                    <button id="devopsBtn"
-                        class="bg-white hover:bg-gray-100/50 rounded-3xl text-sm -mr-2 px-5 py-2.5 focus:ring-4 focus:ring-gray-300">
-
-                        <div class="flex flex-col mt-4">
-                            <div> <img src="global/img/devopsnobg.png" alt="DB Logo" width="90"
-                                    class="rounded-2xl ml-1 -mt-3 mb-1">
-
-                            </div>
-                            <div class="-mt-3">
-                                <span class="font-405 tracking-wide text-lg ">Platform</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button id="dbBtn"
-                        class="bg-white hover:bg-gray-100/50 rounded-3xl px-5 py-2.5 focus:ring-4 focus:ring-gray-300">
-                        <div class="flex items-center flex-col">
-                            <div> <img src="global/img/dbnobg.png" alt="DB Logo" width="90" class="rounded-2xl ml-1">
-                            </div>
-                            <div class="-mt-1">
-                                <span class="font-405 tracking-wide text-lg ">Data</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button id="backendBtn"
-                        class="bg-white hover:bg-gray-100/50 rounded-3xl text-sm px-5 py-2.5 focus:ring-4 focus:ring-gray-300">
-
-                        <div class="flex items-center flex-col">
-                            <div> <img src="global/img/backendnobg.png" alt="DB Logo" width="80"
-                                    class="rounded-2xl ml-1">
-
-                            </div>
-                            <div class="-mt-1">
-                                <span class="font-405 tracking-wide text-lg ">Backend</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button id="frontendBtn"
-                        class="bg-white hover:bg-gray-100/50 rounded-3xl text-sm px-5 py-2.5 focus:ring-4 focus:ring-gray-300">
-
-                        <div class="flex items-center flex-col mt-4">
-                            <div> <img src="global/img/uinobg.png" alt="DB Logo" width="70" class="rounded-2xl ml-1">
-
-                            </div>
-                            <div class="mt-2">
-                                <span class="font-405 tracking-wide text-lg ">Frontend</span>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button id="osBtn"
-                        class=" bg-white hover:bg-gray-100/50 rounded-3xl text-sm px-5 py-2.5 focus:ring-4 focus:ring-gray-300">
-
-                        <div class="flex items-center flex-col mt-4">
-                            <div> <img src="global/img/osnobg.png" alt="DB Logo" width="80" class="rounded-2xl ">
-
-                            </div>
-                            <div class="">
-                                <span class="font-405 tracking-wide text-lg ">Open Source</span>
-                            </div>
-                        </div>
-                    </button>
-
-                </div>
-
-                <!-- sections -->
-                <div id="devopsSection" class="flex flex-col gap-1 items-center">
-
-                    <!-- cnss -->
-                    <div class="flex flex-row gap-16 bg-black text-white rounded-3xl px-12 p-8 mb-6">
-                        <!-- Left side -->
-                        <div class="flex flex-col gap-2 items-center justify-center w-36">
-                            <!-- fixed width -->
-                            <img src="global/img/IBM_Partner_black.png" alt="IBM Logo" class="rounded-2xl ml-1">
-                        </div>
-                        <!-- Right side -->
-                        <div class="flex flex-col gap-2 flex-1 mt-4 mr-10 mb-8">
-                            <div>
-                                <span class="font-0200 text-lg">
-                                    Implementation of a National Monitoring Platform <br />for the Social Security
-                                    Administration
-                                </span>
-                            </div>
-
-                            <div class="mt-2">
-                                <span class="font-albert-sans-regular tracking-wide text-md break-words mb-2">
-                                    Led deployment as the project manager / Platform Engineer of the monitoring
-                                    platform,
-                                    covering 2000+ servers (Linux, Windows Server, AIX), 140 routers, and 390 switches.
-                                    Integrated observability across 30+ databases and 40+ application servers.
-                                    Developed automation and analytics pipelines to enhance visibility and <b><u
-                                            class="underline decoration-2 underline-offset-4">reporting
-                                            accuracy. </u></b>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- bcp -->
-                    <div class="flex flex-row gap-16 bg-black text-white rounded-3xl px-12 p-8 mb-10">
-                        <!-- Left side -->
-                        <div class="flex flex-col gap-2 items-center justify-center w-36">
-
-
-                            <img src="global/img/IBM_Partner_black.png" alt="IBM Logo" width="400"
-                                class="rounded-2xl ml-1">
-
-                        </div>
-                        <!-- Right side -->
-                        <div class="flex flex-col gap-2 flex-1 mt-4 mr-10 mb-8">
-
-                            <div>
-                                <span class="font-0200 text-lg">
-                                    Implementation of a Core Banking Software Platform <br />
-                                    for
-                                    the Popular Bank
-                                </span>
-                            </div>
-
-                            <div class="mt-2">
-                                <span class="font-albert-sans-regular tracking-wide text-md break-words mb-2">
-                                    I was the project manager and the principal platform engineer responsible for
-                                    designing, implementing and testing a highly available and fully resilient
-                                    infrustructure for the bank's core banking software, deployed on their private
-                                    cloud. Included the Application Servers, Queueing system and shared disks.
-                                    The platform I delivered insured the following:
-
-                                    <br /><br />
-                                    ● &nbsp;&nbsp;&nbsp;High Availability across 80+ application server nodes<br />
-                                    ● &nbsp;&nbsp;&nbsp;Continuous, fault-tolerant messaging for core operations<br />
-                                    ● &nbsp;&nbsp;&nbsp;Geographically distributed disaster recovery to ensure <b><u
-                                            class="underline decoration-2 underline-offset-4">zero
-                                            downtime.</u></b>
-
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- douane -->
-                    <div class="flex flex-row gap-16 bg-black text-white rounded-3xl px-12 p-8 mb-10">
-                        <!-- Left side -->
-                        <div class="flex flex-col gap-2 items-center justify-center w-36">
-
-
-                            <img src="global/img/IBM_Partner_black.png" alt="IBM Logo" width="400"
-                                class="rounded-2xl ml-1">
-
-                        </div>
-                        <!-- Right side -->
-                        <div class="flex flex-col gap-2 flex-1 mt-4 mr-10 mb-8">
-
-                            <div>
-                                <span class="font-0200 text-lg">
-                                    Implementation of a Core Banking Software Platform <br />
-                                    for
-                                    the Popular Bank
-                                </span>
-                            </div>
-
-                            <div class="mt-2">
-                                <span class="font-albert-sans-regular tracking-wide text-md break-words mb-2">
-                                    𝑪𝒖𝒔𝒕𝒐𝒎𝒔 𝒂𝒏𝒅 𝒊𝒏𝒅𝒊𝒓𝒆𝒄𝒕 𝒕𝒂𝒙𝒆𝒔 𝒂𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏
-                                    aims to design, implement,
-                                    and
-                                    migrate their main customs platform. <br /> The components that were associated
-                                    to my
-                                    scope were: <br \>
-                                    ( reach ~ 60 million users )
-                                    <br \><br \>
-
-                                    ● &nbsp;&nbsp;&nbsp;IBM Wesbphere Application Server 9
-                                    <br \>
-                                    ● &nbsp;&nbsp;&nbsp;IBM Edge9<br \>
-                                    ● &nbsp;&nbsp;&nbsp;IBM Security Directory Suite 8<br \>
-                                </span>
-                            </div>
-
-                        </div>
                     </div>
 
                 </div>
-                <div id="dbSection" class="flex flex-col gap-1 items-center">
-
-                    <!-- ram -->
-                    <div class="flex flex-row gap-16 bg-black text-white rounded-3xl px-12 p-8 mb-10">
-                        <!-- Left side -->
-                        <div class="flex flex-col gap-2 items-center justify-center w-36">
 
 
-                            <img src="global/img/IBM_Partner_black.png" alt="IBM Logo" width="400"
-                                class="rounded-2xl ml-1">
+                <script>
+                    function copyEmail() {
+                        navigator.clipboard.writeText("youssef@blankresearch.com");
+                        const tooltip = document.getElementById("tooltip");
+                        tooltip.classList.add("opacity-100");
+                        setTimeout(() => tooltip.classList.remove("opacity-100"), 800);
+                    }
 
-                        </div>
-
-                        <!-- Right side -->
-                        <div class="flex flex-col gap-2 flex-1 mt-4 mr-10 mb-8">
-
-                            <div>
-                                <span class="font-0200 text-lg">
-                                    Migration of a 4TB Shared Data Platform<br />
-                                    for Royal Air Maroc Airlines
-                                </span>
-                            </div>
-
-                            <div class="mt-2">
-                                <span class="font-albert-sans-regular tracking-wide text-md break-words mb-2">
-                                    It is the largest airline in the country. My job as a data engineer was to insure a
-                                    smooth migration of 4 Terabytes of data to the new shared data platform, hosting all
-                                    types of unstructured documents, media and databases used to power their principal
-                                    booking website (which has over 10 million users annually). The project was
-                                    accompanied by developing the necessary pipelines in <u
-                                        class="underline decoration-2 underline-offset-4">python,
-                                        Terraform and IBM Spectrum Scale </u> &nbsp;&nbsp;(proprietary
-                                    software).
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div id="backendSection" class="p-4 hidden">Backend Content</div>
-                <div id="frontendSection" class="p-4 hidden">Frontend Content</div>
-                <div id="osSection" class="p-4 hidden">Open Source Content</div>
+                    function hideTooltip() {
+                        document.getElementById("tooltip").classList.remove("opacity-100");
+                    }
+                </script>
 
 
-                <div id="experience-section" class="mt-16 ml-10">
+
+                <div class="mt-16 ml-10">
 
                     <div class="flex flex-col gap-8 mt-4">
                         <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
@@ -764,11 +564,157 @@
                             </div>
                         </div>
 
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
 
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
 
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-blue-700 text-blue-700 border bg-blue-100 bg-opacity-30 text-xs ">
+                                        Data Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑹𝒐𝒚𝒂𝒍 𝑨𝒊𝒓 𝑴𝒂𝒓𝒐𝒄 airline aims to implement a new shared storage
+                                        platform, containing the following : <br \>
+                                        <br \><br \>
 
+                                        ● &nbsp;&nbsp;&nbsp;IBM Spectrum Scale ( Protocol Node configuration using SMB
+                                        protocol )
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Migration of 4 Tb of data, from and to a Spectrum Scale
+                                        platform.<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Spectrum Scale
+                                    </span>
 
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑩𝒂𝒏𝒒𝒖𝒆 𝑷𝒐𝒑𝒖𝒍𝒂𝒊𝒓𝒆 bank is making a major upgrade of its entire
+                                        corebanking system (which is done every 10 years). <br />
+                                        My direct scope was design
+                                        and implementation of a High Availablity architecture with a Disaster Recovery
+                                        Site. <br /> and the assistance of the deployment of Temenos T24 ( R18 ).
+                                        Containing
+                                        the following products : <br \>
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM WebSphere Application Server 9 ( High Availability
+                                        configuration ), IBM HTTP Server 9 [ over 80 nodes ]
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM MQ 9 ( Multiple Multi-Instance Queue Manager
+                                        configuration )<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Spectrum Scale 5 ( with AFM-based Async Disaster
+                                        Recovery on a distant site )<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Websphere Application Server
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM MQ
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Spectrum Scale
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8 mb-10">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑺𝒐𝒄𝒊𝒂𝒍 𝑺𝒆𝒄𝒖𝒓𝒊𝒕𝒚 𝑨𝒈𝒆𝒏𝒄𝒚 aims to implement a new monitoring
+                                        platform for over 2000 server & their operating systems (Linux, Windows Server,
+                                        AIX). <br />
+                                        140 routers, 390 switches and network
+                                        equipements, 13 VMWare Hypervisors. <br /> 30 Oracle Database, 15 Sybase, 8 SQL
+                                        Server,
+                                        6 Mysql, 4 PostgreSQL. <br /> 40 Application Servers (Jboss, websphere, Tomcat,
+                                        Apache),
+                                        using the following stack:
+                                        <br \><br \>
+                                        ● &nbsp;&nbsp;&nbsp;Elastic Search Database
+                                        ● &nbsp;&nbsp;&nbsp;IBM Application Performance Management 8.1.4 + IBM Tivoli
+                                        Monitoring 6.3
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Tivoli Network Manager IP Edition 4.2 + IBM Tivoli
+                                        Netcool / OMNIbus 8.1<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Jazz for Service Management 1.1, IBM TCR<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Network Performace Insight 1.3<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Cognos Reporting<br \>
+                                        ● &nbsp;&nbsp;&nbsp;Bash scripting<br \>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -780,47 +726,6 @@
 
         </div>
     </div>
-    <script>
-        const sections = {
-            devopsBtn: 'devopsSection',
-            dbBtn: 'dbSection',
-            backendBtn: 'backendSection',
-            frontendBtn: 'frontendSection',
-            osBtn: 'osSection'
-        };
-
-        // Hide all sections first
-        Object.values(sections).forEach(secId => {
-            document.getElementById(secId).classList.add('hidden');
-        });
-
-        // Default: show Devops section and highlight its button
-        document.getElementById('devopsSection').classList.remove('hidden');
-        document.getElementById('devopsBtn').classList.add('bg-gray-200/70');
-
-        Object.keys(sections).forEach(btnId => {
-            const btn = document.getElementById(btnId);
-            btn.addEventListener('click', () => {
-                // Hide all sections
-                Object.values(sections).forEach(secId => {
-                    document.getElementById(secId).classList.add('hidden');
-                });
-                // Show the clicked section
-                document.getElementById(sections[btnId]).classList.remove('hidden');
-
-                // Reset all buttons to bg-white
-                Object.keys(sections).forEach(id => {
-                    const b = document.getElementById(id);
-                    b.classList.remove('bg-gray-200/70');
-                    b.classList.add('bg-white');
-                });
-                // Highlight clicked button
-                btn.classList.remove('bg-white');
-                btn.classList.add('bg-gray-200/70');
-            });
-        });
-    </script>
-
 </body>
 
 </html>
