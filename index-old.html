@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youssef Curriculum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="global/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="global/css/global.css">
+</head>
+
+<body class="h-screen flex flex-col">
+    <div class="flex mt-20 flex-row items-center justify-center">
+        <div id="content" class="w-full px-6 flex max-w-7xl">
+            <div id="vision" class="hidden w-full flex flex-col px-auto">
+
+                <div class="flex flex-row justify-between gap-20">
+                    <div class="flex gap-10 items-start justify-start ml-10">
+                        <img src="global/img/profile.png" alt="Profile" class="w-36 h-36 rounded-full" />
+                        <div class="flex flex-col items-start mt-3 justify-center tracking-wider gap-1 w-full">
+                            <div class=" font-sf-pro-display-bold text-2xl">
+                                Youssef
+                                <span class="font-sf-pro-display-light text-2xl text-gray-600">, Software
+                                    Engineer</span>
+                            </div>
+                            <div class="font-sf-pro-display-light text-md text-gray-600 mb-3 flex items-center gap-3">
+                                📍 Remote, Worldwide
+                            </div>
+                            <div class="flex flex-row gap-4 ml-2 mt-2">
+                                <a href="https://linkedin.com/in/yousbot" target="_blank" rel="noopener noreferrer">
+                                    <img src="global/img/linkedin.png" class="w-8 h-8" alt="LinkedIn" />
+                                </a>
+                                <a href="https://github.com/blankresearch" target="_blank" rel="noopener noreferrer">
+                                    <img src="global/img/github.png" class="w-8 h-8" alt="GitHub" />
+                                </a>
+                                <div class="relative">
+                                    <button onclick="copyEmail()" onmouseenter="hideTooltip()"
+                                        class="focus:outline-none">
+                                        <img src="global/img/email.png" class="w-8 h-8" alt="Email" />
+                                    </button>
+                                    <div id="tooltip"
+                                        class="absolute left-10 top-8 text-xs bg-black text-white px-2 py-1 rounded opacity-0 transition-opacity duration-200">
+                                        Copied
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-col items-center justify-center gap-4">
+                        <a href="global/img/resume.pdf" target="_blank" rel="noopener noreferrer"
+                            class="w-64 text-green-800 bg-green-200 bg-opacity-50 hover:bg-opacity-70 focus:ring-4 focus:outline-none focus:ring-gray-700 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                            <img src="global/img/download.svg" alt="letter" width="30" class="mr-3">
+                            <span class="text-left leading-tight text-md">Updated Resume</span>
+                        </a>
+                        <a href="global/img/bookshelved-Recommendation.pdf" target="_blank" rel="noopener noreferrer"
+                            class="w-64 text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                            <img src="global/img/download.svg" alt="letter" width="30" class="mr-3">
+                            <span class="text-left leading-tight text-md">Recommendation Letter</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <script>
+                    function copyEmail() {
+                        navigator.clipboard.writeText("youssef@blankresearch.com");
+                        const tooltip = document.getElementById("tooltip");
+                        tooltip.classList.add("opacity-100");
+                        setTimeout(() => tooltip.classList.remove("opacity-100"), 800);
+                    }
+
+                    function hideTooltip() {
+                        document.getElementById("tooltip").classList.remove("opacity-100");
+                    }
+                </script>
+
+
+
+                <div class="mt-16 ml-10">
+
+                    <div class="flex flex-col gap-8 mt-4">
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-16">
+
+                                <div>
+                                    <img src="global/img/flottando-logo.png" alt="TMTIME Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl">Flottando</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-red-700 text-red-700 border bg-red-100 bg-opacity-30 text-xs ">
+                                        Full Stack Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">Switzerland based
+                                        AI Fleet Management company aims to empower european businesses by stripping away complexity, eliminates manual work, and puts fleet services on autopilot.<br
+                                            \><br \>
+                                        ● &nbsp;&nbsp;&nbsp;Implement UI designs (react) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Develop server-side logic and API routes. (fastAPI)
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Code end-to-end features and troubleshoot issues. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Scale the platform.<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        React
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Python
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        FastAPI
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        PostgreSQL
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        CI/CD
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        AWS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-16">
+
+                                <div>
+                                    <img src="global/img/tmtime-logo.png" alt="TMTIME Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl">TMTIME Ltd</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-red-700 text-red-700 border bg-red-100 bg-opacity-30 text-xs ">
+                                        Full Stack Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">Hong Kong based
+                                        auction house aims to build a platform for their international customers. <br
+                                            \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;Define product's features. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Design the software architecture to be implemented. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Implement the building blocks of the architecture. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Oversee a team of engineers: both 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕 and
+                                        𝒅𝒂𝒕𝒂
+                                        departments. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Data engineering : code the pipelines, administer data
+                                        operations
+                                        (migration,
+                                        replication, backup, recovery), code backend of the platform. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Full Stack Engineering : code the features and solve the
+                                        bugs. <br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        NextJS
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Tailwind
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        React
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Python
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Flask
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        PostgreSQL
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Redis
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        CI/CD
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        AWS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-10">
+
+                                <div>
+                                    <img src="global/img/bookshelved-logo.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl">Bookshelved</span>
+                                </div>
+
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-red-700 text-red-700 border bg-red-100 bg-opacity-30 text-xs ">
+                                        Full Stack Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        A California (US) based startup aims to build a social media for book lovers
+                                        worldwide, and needs to build the platform for hundreds of thousands of users.
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;Implement UI designs (react, nextJS, tailwind) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Develop server-side logic and API routes. (nextJS, flask)
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Code end-to-end features and troubleshoot issues. <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Scale the platform.<br \>
+
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        NextJS
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Tailwind
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        React
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Python
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Flask
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        PostgreSQL
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Mysql
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        ElasticSearch
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Redis
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Scraping
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        CI/CD
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        AWS
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Heroku
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-10">
+
+                                <div>
+                                    <img src="global/img/bookshelved-logo.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl">Bookshelved</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-blue-700 text-blue-700 border bg-blue-100 bg-opacity-30 text-xs ">
+                                        Data Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        A California (US) based startup aims to build a social media for book lovers
+                                        worldwide, and needs a lot of books data.
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;Installed & maintained a distributed database infrastructure
+                                        (Mysql, PostgreSQL, Redis, ElasticSearch) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Scraped 20 million book's metadata and content, ingested and
+                                        indexed in a searchable ElasticSearch.
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Coded pipelines for synchronization, data replication and
+                                        other critical operations (in Python) <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Design, code, and maintained a scalable recommendation
+                                        algorithms based on user interest (in Python).<br \>
+                                        ● &nbsp;&nbsp;&nbsp;Coded the platform's server side APIs (in Flask)
+
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Python
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Flask
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        PostgreSQL
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Mysql
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        ElasticSearch
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Redis
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Scraping
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        CI/CD
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        AWS
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Heroku
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div class="flex flex-row gap-3">
+                                    <span
+                                        class="rounded-full px-3 py-1 border-blue-700 text-blue-700 border bg-blue-100 bg-opacity-30 text-xs ">
+                                        Data Engineer
+                                    </span>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 needs to migrate its
+                                        platform to a new
+                                        environment.<br \>
+                                        ( reach ~ 20 million users )
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;KVM/Qemu on Redhat Entreprise Server, over LinuxONE
+                                        Mainframe <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM DB2 Purescale 11.5 <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Oracle RAC 19c <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Oracle GoldenGate <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Security Directory Suite <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Websphere Application Server <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Websphere Portal ( Digital experience )
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Redhat Linux
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Virtualization
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM DB2
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        Oracle Database
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Websphere Application Server
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Websphere Portal
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑪𝒓𝒆𝒅𝒊𝒕 𝒅𝒖 𝑴𝒂𝒓𝒐𝒄 bank aims to implement and migrate a secure
+                                        middleware
+                                        platform <br \>
+                                        ( reach ~ 40 million users )
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM MQ implementation and configuration <br \>
+                                        ● &nbsp;&nbsp;&nbsp;SSL Implementation of secure channels with remote
+                                        clients.<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM MQ
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-blue-700 text-blue-700 border bg-blue-100 bg-opacity-30 text-xs ">
+                                        Data Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑻𝒂𝒙 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 aims to design, implement,
+                                        and
+                                        migrate a High Availablity architecture for an analytics and business
+                                        intelligence platform. <br \>
+                                        ( reach ~ 20 million users )
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM Cognos Analytics 11 ( High Availability configuration )
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM DB2 11.5 ( HADR configuration )<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Infosphere Datastage 11.7<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Cognos Analytics
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM DB2
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        ETL
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑪𝒖𝒔𝒕𝒐𝒎𝒔 𝒂𝒏𝒅 𝒊𝒏𝒅𝒊𝒓𝒆𝒄𝒕 𝒕𝒂𝒙𝒆𝒔 𝒂𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏
+                                        aims to design, implement,
+                                        and
+                                        migrate their main customs platform. <br /> The components that were associated
+                                        to my
+                                        scope were: <br \>
+                                        ( reach ~ 60 million users )
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM Wesbphere Application Server 9
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Edge9<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Security Directory Suite 8<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Websphere Application Server
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Security Directory Suite
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-blue-700 text-blue-700 border bg-blue-100 bg-opacity-30 text-xs ">
+                                        Data Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑹𝒐𝒚𝒂𝒍 𝑨𝒊𝒓 𝑴𝒂𝒓𝒐𝒄 airline aims to implement a new shared storage
+                                        platform, containing the following : <br \>
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM Spectrum Scale ( Protocol Node configuration using SMB
+                                        protocol )
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;Migration of 4 Tb of data, from and to a Spectrum Scale
+                                        platform.<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Spectrum Scale
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑩𝒂𝒏𝒒𝒖𝒆 𝑷𝒐𝒑𝒖𝒍𝒂𝒊𝒓𝒆 bank is making a major upgrade of its entire
+                                        corebanking system (which is done every 10 years). <br />
+                                        My direct scope was design
+                                        and implementation of a High Availablity architecture with a Disaster Recovery
+                                        Site. <br /> and the assistance of the deployment of Temenos T24 ( R18 ).
+                                        Containing
+                                        the following products : <br \>
+                                        <br \><br \>
+
+                                        ● &nbsp;&nbsp;&nbsp;IBM WebSphere Application Server 9 ( High Availability
+                                        configuration ), IBM HTTP Server 9 [ over 80 nodes ]
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM MQ 9 ( Multiple Multi-Instance Queue Manager
+                                        configuration )<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Spectrum Scale 5 ( with AFM-based Async Disaster
+                                        Recovery on a distant site )<br \>
+                                    </span>
+                                </div>
+                                <div class="mb-4 mt-4 flex flex-row flex-wrap gap-y-1">
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Websphere Application Server
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM MQ
+                                    </span>
+                                    <span
+                                        class="rounded-full mr-1 px-3 py-1 border-gray-700 text-gray-700 border bg-gray-100 bg-opacity-30 text-xs ">
+                                        IBM Spectrum Scale
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-16 bg-gray-100 bg-opacity-50 rounded-3xl px-12 p-8 mb-10">
+                            <!-- Left side -->
+                            <div class="flex flex-col gap-2 items-center mt-20">
+
+                                <div>
+                                    <img src="global/img/IBM_Partner.png" alt="Bookshelved Logo" width="100"
+                                        class="rounded-2xl ml-1">
+                                </div>
+                                <div>
+                                    <span class="font-bellefair-regular text-xl whitespace-nowrap">IBM Partner</span>
+                                </div>
+
+                            </div>
+                            <!-- Right side -->
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span
+                                        class="rounded-full px-3 py-1 border-green-700 text-green-700 border bg-green-100 bg-opacity-30 text-xs ">
+                                        Middleware Engineer
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700 text-opacity-80 text-sm break-words mb-2">
+                                        𝑺𝒐𝒄𝒊𝒂𝒍 𝑺𝒆𝒄𝒖𝒓𝒊𝒕𝒚 𝑨𝒈𝒆𝒏𝒄𝒚 aims to implement a new monitoring
+                                        platform for over 2000 server & their operating systems (Linux, Windows Server,
+                                        AIX). <br />
+                                        140 routers, 390 switches and network
+                                        equipements, 13 VMWare Hypervisors. <br /> 30 Oracle Database, 15 Sybase, 8 SQL
+                                        Server,
+                                        6 Mysql, 4 PostgreSQL. <br /> 40 Application Servers (Jboss, websphere, Tomcat,
+                                        Apache),
+                                        using the following stack:
+                                        <br \><br \>
+                                        ● &nbsp;&nbsp;&nbsp;Elastic Search Database
+                                        ● &nbsp;&nbsp;&nbsp;IBM Application Performance Management 8.1.4 + IBM Tivoli
+                                        Monitoring 6.3
+                                        <br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Tivoli Network Manager IP Edition 4.2 + IBM Tivoli
+                                        Netcool / OMNIbus 8.1<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Jazz for Service Management 1.1, IBM TCR<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Network Performace Insight 1.3<br \>
+                                        ● &nbsp;&nbsp;&nbsp;IBM Cognos Reporting<br \>
+                                        ● &nbsp;&nbsp;&nbsp;Bash scripting<br \>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
